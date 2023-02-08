@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1A --group-directories-first | awk -F/ '{printf "%s/,", $0} END {print ""}'
