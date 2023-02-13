@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lR | grep "^d" | grep -v "^d\." | awk '{ if ($9 != "." && $9 != "..") count++ } END { print count }'
+find . -type d -not -name '.' | wc -l
