@@ -1,0 +1,2 @@
+#!/bin/bsah
+printf "%.2f" "$NUM"
