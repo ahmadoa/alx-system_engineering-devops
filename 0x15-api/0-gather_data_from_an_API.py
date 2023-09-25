@@ -16,9 +16,9 @@ if __name__ == '__main__':
     done = 0
 
     for todo in todos.json():
-        if task.get('userId') == int(userId):
+        if todo.get('userId') == int(userId):
             totalTasks += 1
-            if task.get('completed'):
+            if todo.get('completed'):
                 done += 1
 
     print('Employee {} is done with tasks({}/{}):'
